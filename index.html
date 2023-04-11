@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./files/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li class="btn home">
+                    <a href="">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Women
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        Men
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Children
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="shopping-bag">
+            <a href="./cart.html">
+                <img src="./icons/bag.png" alt="cart">
+                Cart
+                <div class="total-items-in-cart">
+                    0
+                </div>
+            </a>
+        </div>
+        <div class="coupon">
+            <input type="text" id="coupon-code" placeholder="Enter coupon code">
+            <button class="coupon-button"onclick="applyCoupon()">Apply</button>
+        </div>
+    </header>
+        
+    
+    <div class="products-list">
+        <div class="products">
+        
+        </div>
+        <div class="cart">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal (0 items): $0
+                </div>
+                <div class="checkout">
+                    Proceed to checkout
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const porductsListEl = document.querySelector(".products-list");
+    </script>
+
+    <script src="./files/products.js"></script>
+    <script src="./files/app.js"></script>
+</body>
+</html>
